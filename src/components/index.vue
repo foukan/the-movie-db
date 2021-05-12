@@ -48,6 +48,7 @@ export default {
   font-family:  Roboto,  sans-serif;
   padding: .5rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   max-width: 300px;
   max-height: 400px;
   
