@@ -1,22 +1,25 @@
 <template>
+<div>
+<Navbar></Navbar>
 <index></index>
+</div>
 </template>
 
 <script>
 import index from './components/index.vue'
+import Navbar from './components/Navi.vue'
 
 export default {
   name: 'App',
   components: {
-    index
+    index,
+    Navbar,
   }
 }
 </script>
 
 <style>
-#app {
-  background: #282529;
-  display: flex;
-  justify-content: center;
+*{
+  background:#282529;
 }
 </style>

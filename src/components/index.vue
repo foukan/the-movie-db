@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapp">
     <div v-for="movie in movies" :key="movie.id" class="movie-card">
         <div class="img-area">
           <img :src="imgUrl + movie.poster_path" :alt="movie.original_title" />
@@ -42,48 +42,56 @@ export default {
 </script>
 
 <style scoped=true>
-.movie-card {
+.wrapp{
   display: flex;
-  float: left;
-  font-family:  Roboto,  sans-serif;
-  padding: .5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  max-width: 300px;
-  max-height: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+.movie-card {
+  font-family: 'Karla', sans-serif;
+  padding: 0 .5rem;
+  margin-top: 1rem;
+  max-width: 255px;
+  max-height: 350px;
   
 }
 
 .img-area {
   position: relative;
-  max-height: 350px;
-  max-width: 250px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 7px;
   transition: all 1.2s ease-in-out;
 }
 .img-area img {
   max-width: 100%;
+  height: 350px;
   border-radius: 7px;
   box-shadow: 5px 9px 10px 1px #161515;
   transition: all 1.2s ease-in-out;
-  opacity: .6;
+  opacity: .7;
 }
 .img-area img:hover{
   transform: scale(1.05);
   opacity: 1;
+  box-shadow: 6px 12px 13px 3px #131212;
   cursor: pointer;
 }
 .vote{
-  color: antiquewhite;
-  font-size: .7rem;
-  text-align: center;
-  background-color: #c70505;
+  width: 26px;
+  height: 26px;
   border-radius:100%;
-  padding: .4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 10px;
   left: 5px;
-  transition: all 1.2s ease-in-out;
+  color: antiquewhite;
+  font-size: .7rem;
+  background-color: #c70505;
+  transition: all .8s ease-in-out;
 }
 .img-area:hover .vote{
   opacity: .5;
