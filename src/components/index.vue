@@ -20,7 +20,7 @@ export default {
       movies: [],
     };
   },
-
+  
   created() {
     axios
       .get(
@@ -53,10 +53,8 @@ export default {
   padding: 0 .5rem;
   margin-top: 1rem;
   max-width: 255px;
-  max-height: 350px;
-  
+  max-height: 350px;  
 }
-
 .img-area {
   position: relative;
   max-width: 100%;
@@ -72,13 +70,13 @@ export default {
   transition: all 1.2s ease-in-out;
   opacity: .7;
 }
-.img-area img:hover{
+.img-area img:hover {
   transform: scale(1.05);
   opacity: 1;
   box-shadow: 6px 12px 13px 3px #131212;
   cursor: pointer;
 }
-.vote{
+.vote {
   width: 26px;
   height: 26px;
   border-radius:100%;
@@ -93,9 +91,8 @@ export default {
   background-color: #c70505;
   transition: all .8s ease-in-out;
 }
-.img-area:hover .vote{
+.img-area:hover .vote {
   opacity: .5;
   transform: scale(1.2);
 }
-
 </style>
