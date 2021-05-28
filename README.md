@@ -1,5 +1,8 @@
 # the-movie-db
 
+## Demo
+http://dou-moviue.herokuapp.com/
+
 ## Project setup
 ```
 npm install
@@ -22,3 +25,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### ToDo
+
+- Header
+- Movie Details
+- Router
+- Vuex ?
+- API links 
