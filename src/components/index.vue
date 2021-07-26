@@ -68,7 +68,7 @@ export default {
   border-radius: 7px;
   box-shadow: 5px 9px 10px 1px #161515;
   transition: all 1.2s ease-in-out;
-  opacity: .7;
+  opacity: .6;
 }
 .img-area img:hover {
   transform: scale(1.05);
